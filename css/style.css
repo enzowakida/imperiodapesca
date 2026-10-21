@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    width: 100%;
+
+    /* ADICIONE ESTAS DUAS LINHAS: */
+    display: flex;
+    justify-content: space-between; /* Empurra a logo pra esquerda e o menu pra direita */
+    align-items: center;            /* Alinha os dois perfeitamente na vertical */
+}
+
+/* Coloca a imagem e o texto da logo lado a lado */
+.logo {
+    display: flex;
+    align-items: center; /* Alinha na altura certinha */
+    gap: 10px;           /* Espaço entre a imagem e a palavra */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Controla o tamanho da imagem da logo para não quebrar a tela */
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Transforma os itens da lista <ul> em uma linha horizontal */
+.menu ul {
+    list-style: none; /* Remove as bolinhas do HTML */
+    display: flex;     /* Coloca os itens lado a lado */
+    gap: 20px;         /* Espaço entre um link e outro */
+}
+
+/* Tira o sublinhado e define a cor dos links */
+.menu a {
+    color: #ffffff;
+    text-decoration: none; /* Tira o sublinhado */
+    font-weight: 500;
+    transition: 0.3s;      /* Deixa a mudança de cor suave */
+}
+
+/* O que acontece quando passa o ponteiro do mouse por cima do link */
+.menu a:hover {
+    color: #38bdf8; /* Muda para azul claro */
+}
+
+.texto {
+    flex: 1;
+    margin-bottom: 500px;
+}
+
+.texto span {
+
+    color: aqua;
+}
+
+.texto h2 {
+    display: flex;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.texto h1 {
+    font-size: 55px;
+    width: auto;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.b1 {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 7px;
+}
+
+.b2 {
+    background-color: transparent;
+    color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave para dar destaque */
+}
+
+.texto h3 {
+    border: black;
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+    width: 385px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.imagem img {
+    margin-top: 1px;
+    width: auto;
+}
