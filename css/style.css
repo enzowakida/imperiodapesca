@@ -1,25 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
 .cabecalho {
-    background-color: #1e293b;
+    background-color: #020402;
     padding: 15px 30px;
     width: 100%;
 
     /* ADICIONE ESTAS DUAS LINHAS: */
     display: flex;
-    justify-content: space-between; /* Empurra a logo pra esquerda e o menu pra direita */
-    align-items: center;            /* Alinha os dois perfeitamente na vertical */
+    justify-content: space-between;
+    /* Empurra a logo pra esquerda e o menu pra direita */
+    align-items: center;
+    /* Alinha os dois perfeitamente na vertical */
 }
 
 /* Coloca a imagem e o texto da logo lado a lado */
 .logo {
     display: flex;
-    align-items: center; /* Alinha na altura certinha */
-    gap: 10px;           /* Espaço entre a imagem e a palavra */
+    align-items: center;
+    /* Alinha na altura certinha */
+    gap: 10px;
+    /* Espaço entre a imagem e a palavra */
     color: #ffffff;
     font-weight: bold;
     font-size: 20px;
@@ -33,32 +43,47 @@
 
 /* Transforma os itens da lista <ul> em uma linha horizontal */
 .menu ul {
-    list-style: none; /* Remove as bolinhas do HTML */
-    display: flex;     /* Coloca os itens lado a lado */
-    gap: 20px;         /* Espaço entre um link e outro */
+    list-style: none;
+    /* Remove as bolinhas do HTML */
+    display: flex;
+    /* Coloca os itens lado a lado */
+    gap: 20px;
+    /* Espaço entre um link e outro */
 }
 
 /* Tira o sublinhado e define a cor dos links */
 .menu a {
     color: #ffffff;
-    text-decoration: none; /* Tira o sublinhado */
+    text-decoration: none;
+    /* Tira o sublinhado */
     font-weight: 500;
-    transition: 0.3s;      /* Deixa a mudança de cor suave */
+    transition: 0.3s;
+    /* Deixa a mudança de cor suave */
 }
 
 /* O que acontece quando passa o ponteiro do mouse por cima do link */
 .menu a:hover {
-    color: #38bdf8; /* Muda para azul claro */
+    color: #38bdf8;
+    /* Muda para azul claro */
+}
+
+.texto, .imagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .texto {
-    flex: 1;
-    margin-bottom: 500px;
+    align-items: flex-start;
+    color: #D0E4D0;
+    margin-left: 50px;
 }
 
 .texto span {
-
-    color: aqua;
+    color: #216149;
 }
 
 .texto h2 {
@@ -66,24 +91,29 @@
     font-size: medium;
     margin-top: 10px;
     margin-bottom: 7px;
+    font-weight: 400;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .texto h1 {
     font-size: 55px;
     width: auto;
+    font-weight: 900;
 }
 
 .principal {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 40px;
     padding: 50px;
+    background: #020402;
+    background: linear-gradient(90deg, rgba(2, 4, 2, 1) 6%, rgba(20, 92, 67, 1) 68%);
 }
 
 .b1 {
     background-color: blue;
-    color: white;
+    color: #D0E4D0;
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -93,25 +123,28 @@
 
 .b2 {
     background-color: transparent;
-    color: black;
+    color: #D0E4D0;
     width: 100px;
     height: 50px;
     border-radius: 10px;
     margin-top: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave para dar destaque */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Sombra suave para dar destaque */
 }
 
 .texto h3 {
-    border: black;
-    color: white;
+    border: #020402;
+    color: #020402;
     border-radius: 20px;
-    background-color: black;
-    width: 385px;
-    height: 30px;
+    background-color: #D0E4D0;
+    width: 315px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: 900;
 }
 
 .imagem img {
