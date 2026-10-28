@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Segoe UI', Roboto, sans-serif;
+    overflow-y: scroll;
 }
 
 .cabecalho {
@@ -53,7 +54,7 @@ body {
 
 /* Tira o sublinhado e define a cor dos links */
 .menu a {
-    color: #ffffff;
+    color: #FFFFF0;
     text-decoration: none;
     /* Tira o sublinhado */
     font-weight: 500;
@@ -78,7 +79,7 @@ body {
 
 .texto {
     align-items: flex-start;
-    color: #D0E4D0;
+    color: #F5F5F5;
     margin-left: 50px;
 }
 
@@ -112,8 +113,9 @@ body {
 }
 
 .b1 {
-    background-color: blue;
-    color: #D0E4D0;
+    background-color: #1B5F46;
+    border: none;
+    color: #F5F5F5;
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -123,7 +125,8 @@ body {
 
 .b2 {
     background-color: transparent;
-    color: #D0E4D0;
+    color: #F5F5F5;
+    border-color: #F5F5F5;
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -136,7 +139,7 @@ body {
     border: #020402;
     color: #020402;
     border-radius: 20px;
-    background-color: #D0E4D0;
+    background-color: #F5F5F5;
     width: 315px;
     height: 35px;
     display: flex;
