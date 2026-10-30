@@ -37,9 +37,13 @@ body {
 }
 
 /* Controla o tamanho da imagem da logo para não quebrar a tela */
-.logo img {
-    width: 35px;
-    height: 35px;
+.logo h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #4be08a;
 }
 
 /* Transforma os itens da lista <ul> em uma linha horizontal */
@@ -84,7 +88,7 @@ body {
 }
 
 .texto span {
-    color: #216149;
+    color: #4be08a;
 }
 
 .texto h2 {
@@ -109,29 +113,34 @@ body {
     gap: 40px;
     padding: 50px;
     background: #020402;
-    background: linear-gradient(90deg, rgba(2, 4, 2, 1) 6%, rgba(20, 92, 67, 1) 68%);
+    background: linear-gradient(90deg,rgba(2, 4, 2, 1) 0%, rgba(20, 92, 67, 1) 68%);
 }
 
 .b1 {
-    background-color: #1B5F46;
+    background-color: #4be08a;
     border: none;
-    color: #F5F5F5;
-    width: 100px;
+    color: #020402;
+    width: 120px;
     height: 50px;
     border-radius: 10px;
     margin-top: 15px;
     margin-right: 7px;
+    font-weight: 750;
+    font-size: 14px;
 }
 
 .b2 {
     background-color: transparent;
     color: #F5F5F5;
     border-color: #F5F5F5;
-    width: 100px;
+    border: 2px solid;
+    width: 130px;
     height: 50px;
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-weight: 750;
+    font-size: 14px;
     /* Sombra suave para dar destaque */
 }
 
@@ -146,8 +155,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 7px;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 .imagem img {
